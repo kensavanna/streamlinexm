@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>AppCaviar</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<style>
+.home-content{background:white;}
+.header-nav-wrap .header-main-nav li.current a,.home-content h1,.s-about .display-1, .s-about h3,.s-footer h4{color:black;}
+.header-nav-wrap .header-main-nav li.current a{font-weight:bold;}
+.header-nav-wrap .header-main-nav li a:hover{color:black; font-weight:bold;}
+.header-nav-wrap .header-main-nav li a{color:black;}
+section{background:white; border-bottom:1px solid silver;}
+.home-content p,.home-content h3,.s-about p.lead,p.lead,.s-download .display-1, .s-download h3,.s-download p.lead {color:black;}
+h4{color:white;}
+.s-footer {
+    padding-top: 2.8rem;
+    background: transparent;
+}
+
+
+@media only screen and (max-width:800px) {
+.header-nav-wrap .header-main-nav li.current a {color:white;}
+.header-nav-wrap .header-main-nav li a {color:silver;}	
+.header-nav-wrap .header-main-nav li a:hover {color:white;}	
+	
+
+.header-menu-toggle span::before {
+    background: black;
+    top: -9px;
+}	
+
+.header-menu-toggle span::after {
+    bottom: -9px;
+    background: black;
+}
+
+.header-menu-toggle span {background: black;}
+	
+.header-menu-toggle.is-clicked span::before,
+.header-menu-toggle.is-clicked span::after {
+  background-color: black;
+}	
+	
+}
+</style>
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header 
+    ================================================== -->
+    <header class="s-header" style="background:white;  border-top:1px solid white;" >
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo" href="index.html">
+                   <!-- <img src="images/logo.svg" alt="Homepage">-->
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav"  style="color:white;">
+                    <li class="current"><a class="smoothscroll" href="#home" title="intro">Intro</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll" href="#features" title="features">Features</a></li>
+                    <li><a class="smoothscroll" href="#pricing" title="pricing">Pricing</a></li>
+                    <li><a class="smoothscroll" href="#download" title="download">Download</a></li>	
+                </ul>
+    
+                <div class="header-cta">
+                    <a href="#download" class="btn btn--primary header-cta__btn smoothscroll"  style="color:black; background:white; border:1px solid silver;">Get The App</a>
+                </div>
+            </nav> <!-- end header-nav-wrap -->
+    
+            <a class="header-menu-toggle" href="#"  tyle="background:red;"><span style="ackground:black;">Menu</span></a>
+        </div>
+
+    </header> <!-- end header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                    <!--AppCaviar is an Amazing App <br>
+                    That Does It All.-->
+					AppCaviar is a Go-to App<br>
+                    That Does It All.
+                    </h1>
+    
+                    <h3>
+                    From door to door city navigation to school discovery and exploration, its time you unlock your potential and see your city and your institutions in a better light using our advanced 'time and space' management and community engagement features available right at your fingertips
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="#download" class="btn btn--primary home-content__btn smoothscroll" style="color:black; background:white; border:1px solid silver;">
+                            Get The App
+                        </a>
+                    </div>
+                </div> <!-- end home-content__left-->
+
+                <div class="home-content__right">
+                    <img src="images/hero-app-screens-800.png" srcset="images/hero-app-screens-800.png 1x, images/hero-app-screens-1600.png 2x">
+                </div> <!-- end home-content__right -->
+
+            </div> <!-- end home-content__main -->
+
+            <!--<ul class="home-content__social">
+                <li><a href="#0">Facebook</a></li>
+                <li><a href="#0">twitter</a></li>
+                <li><a href="#0">Instagram</a></li>
+            </ul>-->
+
+        </div> <!-- end home-content -->
+
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll</span>
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section"  style="background:white;">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Simply The Best Messaging App Out There.
+                </h1>
+                <p class="lead">
+                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
+                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
+                    omnis ea.
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row wide about-desc" data-aos="fade-up">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Intuitive.</h3>
+
+                    <p>
+                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
+                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
+                    omnis ea aut cumque eos.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Smart.</h3>
+
+                    <p>
+                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
+                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
+                    omnis ea aut cumque eos.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Powerful.</h3>
+
+                    <p>
+                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
+                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
+                    omnis ea aut cumque eos.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Secure.</h3>
+
+                    <p>
+                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
+                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
+                    omnis ea aut cumque eos.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+            </div> <!-- end about-desc__slider -->
+            
+        </div> <!-- end about-desc -->
+
+    </section> <!-- end s-about -->
+
+
+
+
+    <!-- features
+    ================================================== -->
+    <section id="features" class="s-features target-section"  style="background:white;">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Loaded With Features You Would Absolutely Love.
+                </h1>
+                <p class="lead">
+                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
+                    Ut quis enim rerum quia assumenda repudiandae molestiae cumque qui. Amet repellat 
+                    omnis ea.
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row features block-1-3 block-m-1-2">
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-upload"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Cloud Based</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-video-camera"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Voice & Video</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-shield"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Always Secure</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-lego-block"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Play Games</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-chat"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Group Chat</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-wallet"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Payments</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end features -->
+
+ 
+    </section> <!-- end s-features -->
+
+
+    <!-- pricing
+    ================================================== -->
+    <section id="pricing" class="s-pricing target-section"  style="background:white;">
+
+        <div class="row section-header align-center" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   Our Simple <br> Straight-Forward Pricing.
+                </h1>
+                <p class="lead">
+                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
+                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
+                    omnis ea.
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row plans block-1-2 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" data-aos="fade-up">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">Free</h3>
+                        <p class="item-plan__price">$0</p>
+                        <p class="item-plan__per">Forever</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li><span>5GB</span> Storage</li>
+                            <li><span>10GB</span> Bandwidth</li>
+                            <li><span>30</span> Email Accounts</li>
+                            <li>Backup & Restore</li>
+                        </ul>
+
+                        <a class="btn btn--primary large full-width"  style="color:black; background:white; border:1px solid silver;"href="#0">Get Started</a>
+                    </div>  
+                
+                </div>
+            </div> <!-- end item-plan -->
+
+            <div class="col-block item-plan tem-plan--popular" data-aos="fade-up">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">Pro Plan</h3>
+                        <p class="item-plan__price">$10</p>
+                        <p class="item-plan__per">Per Month</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li><span>500GB</span> Storage</li>
+                            <li><span>Unlimited</span> Bandwidth</li>
+                            <li><span>50</span> Email Accounts</li>
+                            <li>Backup & Restore</li>
+                        </ul>
+
+                        <a class="btn btn--primary large full-width"  style="color:black; background:white; border:1px solid silver;"href="#0">Get Started</a>
+                    </div>
+                
+                </div>
+            </div> <!-- end item-plan -->
+
+        </div> <!-- end plans -->
+
+    </section> <!-- end s-pricing -->
+
+
+    <!-- download
+    ================================================== -->
+    <section id="download" class="s-download target-section"  style="background:white;">
+
+        <div class="row section-header align-center" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Join Our Community of 3,000,000+ Users.
+                </h1>
+                <p class="lead">
+                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
+                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
+                    omnis ea.
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row">
+            <div class="col-full text-center">
+                <ul class="download-badges" data-aos="fade-up">
+                    <li><a href="#0" title="" class="badge-appstore">App Store</a></li>
+                    <li><a href="#0" title="" class="badge-googleplay">Play Store</a></li>
+                </ul>
+            </div> 
+        </div>
+<br><br><br><br><br><br>
+    </section> <!-- end s-download -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4 style="color:white;">About AppCaviar</h4>
+
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex consectetur adipisicing elit do eiusmod tempor.
+                </p>
+
+            </div>
+
+            <div class="col-five md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-five mob-full">
+                        <h4 style="color:white;">Site links.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="#home" class="smoothscroll">Intro</a></li>
+                            <li><a href="#about" class="smoothscroll">About</a></li>
+                            <li><a href="#features" class="smoothscroll">Features</a></li>
+                            <li><a href="#pricing" class="smoothscroll">Pricing</a></li>
+                            <li><a href="#download" class="smoothscroll">Download</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-seven mob-full">
+                        <h4 style="color:white;">Contact Us.</h4>
+
+                        <p>
+                        Phone: (+1) 415 851 4702 
+                        </p>
+                        <p>
+                        Need help or have a question? Contact us at: <br>
+                        <a href="mailto:#0" class="footer__mail-link">support.appcaviar@gmail.com</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright">
+                <span>&copy; Copyright AppCaviar 2021</span> 
+            </div>
+
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
